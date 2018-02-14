@@ -1,4 +1,4 @@
-# Alura - Spring Boot Course: Agility in java development with Spring
+# Alura - Spring Boot Course: Agility in Java development with Spring
 
 This is the code that I've developed following the course. I've made some changes in the original one.
 

@@ -1,15 +1,18 @@
 version: "2"
 services:
-   # web:
-   #     image: tomcat:7-jre8-alpine
-   #     container_name: casadocodigo_server
-   #     volumes:
-   #         - ./tomcat:/usr/local/tomcat/webapps/src
-   #     network_mode: host
+    web:
+        build: .
+        container_name: listavip_server
+        volumes:
+            - /tmp/listavip:/tmp
+            - ../target:/usr/src
+        depends_on:
+            - db
+        network_mode: host
 
     db:
         image: mariadb:10.3
-        container_name: casadocodigo_db
+        container_name: listavip_db
         volumes:
             - ./mysql_data:/var/lib/mysql
         environment:

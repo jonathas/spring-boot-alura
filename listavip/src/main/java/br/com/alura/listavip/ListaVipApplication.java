@@ -6,10 +6,10 @@ import org.springframework.stereotype.Controller;
 
 @SpringBootApplication
 @Controller
-public class Main {
+public class ListaVipApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Main.class, args);
+		SpringApplication.run(ListaVipApplication.class, args);
 	}
 
 }
